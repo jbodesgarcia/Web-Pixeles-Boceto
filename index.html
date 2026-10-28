@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jose Antonio Bodes García"/>
-    <link href="estilo.css" rel="stylesheet">
+    <meta name="author" content="Jose Antonio Bodes García">
+    <link rel="stylesheet" href="estilo.css">
     <title>Rutas&Naturaleza</title>
 </head>
 <body>
@@ -14,21 +14,93 @@
             <h1>Rutas&Naturaleza</h1>
             <p>Descubre. Explora. Disfruta.</p>
         </div>
+
         <div id="headerDer">
             <img src="imagenes/imagen_header.png">
         </div>
     </header>
 
     <nav>
-
+        <ul>
+            <li>Inicio</li>
+            <li>Rutas</li>
+            <li>Sobre nosotros</li>
+            <li>Contacto</li>
+        </ul>
     </nav>
 
     <section id="sectionPrincipal">
+        <img
+            id="imagenPrincipal"
+            src="imagenes/imgaen_principal.png"
+        >
 
+        <div id="textoPrincipal">
+            <h2>Tu próxima aventura<br>te está esperando</h2>
+            <p>
+                Explora nuestras rutas de senderismo y descubre paisajes únicos.
+                Naturaleza, aire libre y experiencias inolvidables te esperan.
+            </p>
+        </div>
     </section>
 
     <section id="sectionInferior">
-        
+        <div id="cajaFormulario">
+            <h2>Reserva tu ruta</h2>
+
+            <form>
+                <label for="actividad">Actividad *</label>
+                <select id="actividad" name="actividad">
+                    <option value="">Selecciona una actividad</option>
+                    <option value="montana">Montaña</option>
+                    <option value="lago">Lago</option>
+                    <option value="mirador">Mirador</option>
+                </select>
+
+                <div id="datosReserva">
+                    <div>
+                        <label for="fecha">Fecha *</label>
+                        <input type="text" id="fecha" name="fecha">
+                    </div>
+
+                    <div>
+                        <label for="personas">Nº personas *</label>
+                        <input type="text" id="personas" name="personas">
+                    </div>
+                </div>
+
+                <label for="comentarios">Comentarios (opcional)</label>
+                <textarea
+                    id="comentarios"
+                    name="comentarios"
+                    placeholder="Escribe aquí tus comentarios..."
+                ></textarea>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+
+        <div id="bloqueSecundario">
+            <img
+                id="imagenSecundaria"
+                src="imagenes/imagen_secundaria.png"
+            >
+
+            <div id="listaVentajas">
+                <h2>¿Por qué elegimos?</h2>
+                <ul>
+                    <li>Rutas para todos los niveles</li>
+                    <li>Guías especializados</li>
+                    <li>Grupos reducidos</li>
+                    <li>Respeto por el medio ambiente</li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <p>2025 Rutas&Naturaleza. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
