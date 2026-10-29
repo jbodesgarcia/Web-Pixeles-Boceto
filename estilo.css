@@ -1,3 +1,16 @@
+/* importar fuente de google */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Permanent+Marker&display=swap');
+
+/* importar fuente descargada */
+
+@font-face {
+    font-family: 'Jersey';
+    src: url('fuentes/jersey/Jersey_25/Jersey25-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
     width: 1200px;
 }
@@ -5,175 +18,208 @@ html {
 body {
     width: 1160px;
     margin: 0 auto;
+    font-size: 16px;
+    color: #205A82;
     background-color: #FFFFFF;
 }
 
+/* header */
 header {
-    width: 1160px;
-    height: 120px;
+    width: 1120px;
+    height: 80px;
     padding: 20px;
     background-color: #205A82;
 }
 
-#headerIzq {
-    float: left;
+header div {
     width: 300px;
     height: 80px;
-    text-align: center;
-}
-
-#headerIzq h1 {
-    font-size: 32px;
-    font-weight: bold;
+    margin: 0px 0px 0px 20px;
+    float: left;
 }
 
 #headerDer {
-    float: right;
     width: 170px;
-    height: 80px;
+    margin: 0px;
+    float: right;
 }
 
+header div h1 {
+    font-size: 32px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+header img {
+    width: 170px;
+    height: 80px;
+    float: right;
+}
+
+header div p {
+    color: white;
+}
+
+
+/* nav */
 nav {
-    width: 1160px;
-    height: 60px;
+    width: 1120px;
+    height: 40px;
     padding: 10px 20px;
     background-color: #5AAFE0;
 }
 
 nav ul {
-    display: inline-block;
-
-  
-    margin: 0;
-    padding: 0;
-
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
 nav li {
     display: inline-block;
-    width: 120px;
-    height: 40px;
-    padding-top: 10px;
     text-align: center;
+    color: white;
 }
 
-nav li:hover {
+nav ul li {
+    width: 120px;
+    height: 30px;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 50px;
+    background-color: transparent;
+}
+
+nav ul li:hover {
     background-color: #07579B;
 }
 
-#sectionPrincipal {
-    display: flex;
-    gap: 20px;
-    width: 1160px;
-    height: 350px;
+
+/* section principal */
+section {
+    display: flow-root;
+    width: 1120px;
+    height: 310px;
     padding: 20px;
+    font-family: 'Jersey';
     background-color: #FFFFFF;
 }
 
 #imagenPrincipal {
     width: 560px;
     height: 310px;
+    margin: 0px 10px 0px 0px;
+    float: left;
 }
 
 #textoPrincipal {
-    width: 540px;
-    height: 310px;
+    width: 498px;
+    height: 298px;
     padding: 5px 20px;
-    border: 1px solid;
+    border: solid 1px paleturquoise;
+    margin: 0px 0px 0px 10px;
+    float: right;
     background-color: #E5F2FC;
-}
-
-#textoPrincipal h2 {
-    font-size: 20px;
-    font-weight: bold;
 }
 
 #textoPrincipal p {
     font-size: 18px;
 }
 
-#sectionInferior {
-    display: flex;
-    gap: 20px;
-    width: 1160px;
-    height: 777px;
-    padding: 15px 0 15px 20px;
-    background-color: #FFFFFF;
-}
 
-#cajaFormulario {
-    width: 470px;
-    padding: 20px;
-    border: 1px solid;
-    background-color: #FFFFFF;
-}
-
-#cajaFormulario h2 {
-    background-color: #DCECF9;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#cajaFormulario label {
-    font-size: 14px;
-}
-
-#actividad {
-    width: 422px;
-    height: 60px;
-    margin-bottom: 30px;
-    padding: 10px;
-    border: 1px solid;
-    background-color: #FFFFFF;
-    font-size: 14px;
-}
-
-#datosReserva {
-    display: flex;
-    gap: 50px;
-}
-
-#fecha {
-    width: 220px;
-    height: 60px;
-    padding: 10px;
-    border: 1px solid;
-    background-color: #FFFFFF;
-    font-size: 14px;
-}
-
-#personas {
-    width: 142px;
-    height: 60px;
-    padding: 10px;
-    border: 1px solid;
-    background-color: #FFFFFF;
-    font-size: 14px;
-}
-
-#comentarios {
-    width: 422px;
-    height: 60px;
-    margin-bottom: 16px;
-    padding: 10px;
-    border: 1px solid;
-    background-color: #FFFFFF;
-    font-size: 14px;
-}
-
-#cajaFormulario button {
-    width: 422px;
-    height: 60px;
-    margin-bottom: 16px;
-    padding: 0 1px;
-    background-color: #2D9B48;
-    font-size: 14px;
-}
-
-#bloqueSecundario {
-    width: 470px;
+/* section inferior */
+section + section {
+    width: 1140px;
     height: 747px;
+    padding: 15px 0px 15px 20px;
+}
+
+    /* form */
+    form {
+        width: 428px;
+        padding: 0px 20px;
+        border: solid 1px paleturquoise;
+        margin: 0px 10px 0px 0px;
+        float: left;
+        background-color: #FFFFFF;
+    }
+
+    form h2 {
+        background-color: #DCECF9;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    select {
+        width: 400px;
+        height: 58px;
+        padding: 0px 10px;
+        border: solid 1px black;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #205A82;
+        background-color: #FFFFFF;
+    }
+
+
+
+    #fecha {
+        width: 198px;
+        height: 58px;
+        padding: 0px 10px;
+        border: solid 1px black;
+        font-size: 14px;
+        color: #205A82;
+        background-color: #FFFFFF;
+    }
+
+    #personas {
+        width: 120px;
+        height: 58px;
+        padding: 0px 10px;
+        border: solid 1px black;
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #205A82;
+        background-color: #FFFFFF;
+    }
+
+    textarea {
+        width: 400px;
+        height: 58px;
+        padding: 0px 10px;
+        border: solid 1px black;
+        margin: 0px 0px 16px 0px;
+        font-size: 14px;
+        color: #205A82;
+        background-color: #FFFFFF;
+    }
+
+    input[type="submit"] {
+        width: 420px;
+        height: 58px;
+        border: solid 1px black;
+        margin: 0px 0px 16px 0px;
+        background-color: #2D9B48;
+        font-size: 14px;
+        color: #205A82;
+    }
+   
+
+    /* bloque secundario */
+    #bloqueSecundario { 
+    width: 440px;
+    height: 717px;
     padding: 15px;
+    margin: 0px 0px 0px 10px;
+    float: left;
+    background-color: transparent;
 }
 
 #imagenSecundaria {
@@ -182,26 +228,35 @@ nav li:hover {
 }
 
 #listaVentajas {
-    width: 470px;
+    width: 420px;
     height: 311px;
-    margin-top: 25px;
-    padding: 25px;
+    padding: 0px 25px;
+    margin: 25px 0px 0px 0px;
     background-color: #E8F4E9;
 }
 
-#listaVentajas h2 {
-    font-size: 20px;
-    font-weight: bold;
+#datosReserva {
+    display: flow-root;
 }
 
-#listaVentajas li {
-    font-size: 16px;
+#datosReserva div {
+    float: left;
 }
+
+#campoFecha {
+    margin-right: 50px;
+}
+
+#datosReserva label {
+    display: block;
+}
+
+/* footer */
 
 footer {
-    width: 1160px;
-    height: 80px;
+    width: 1120px;
+    height: 40px;
     padding: 20px;
     background-color: #205A82;
-    text-align: center;
+    color: white;
 }

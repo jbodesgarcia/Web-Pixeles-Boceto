@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <div id="headerIzq">
+        <div>
             <h1>Rutas&Naturaleza</h1>
             <p>Descubre. Explora. Disfruta.</p>
         </div>
@@ -29,11 +29,8 @@
         </ul>
     </nav>
 
-    <section id="sectionPrincipal">
-        <img
-            id="imagenPrincipal"
-            src="imagenes/imgaen_principal.png"
-        >
+    <section>
+        <img id="imagenPrincipal" src="imagenes/imgaen_principal.png">
 
         <div id="textoPrincipal">
             <h2>Tu próxima aventura<br>te está esperando</h2>
@@ -44,25 +41,17 @@
         </div>
     </section>
 
-    <section id="sectionInferior">
-        <div id="cajaFormulario">
-            <h2>Reserva tu ruta</h2>
-
-            <form>
+    <section>
+        <form>
+                <h2>Reserva tu ruta</h2>
                 <label for="actividad">Actividad *</label>
-                <select id="actividad" name="actividad">
-                    <option value="">Selecciona una actividad</option>
-                    <option value="montana">Montaña</option>
-                    <option value="lago">Lago</option>
-                    <option value="mirador">Mirador</option>
-                </select>
+                <select id="actividad" name="actividad" placeholder></select>
 
                 <div id="datosReserva">
-                    <div>
+                    <div id="campoFecha">
                         <label for="fecha">Fecha *</label>
                         <input type="text" id="fecha" name="fecha">
                     </div>
-
                     <div>
                         <label for="personas">Nº personas *</label>
                         <input type="text" id="personas" name="personas">
@@ -70,21 +59,14 @@
                 </div>
 
                 <label for="comentarios">Comentarios (opcional)</label>
-                <textarea
-                    id="comentarios"
-                    name="comentarios"
-                    placeholder="Escribe aquí tus comentarios..."
-                ></textarea>
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea>
 
-                <button type="submit">Reservar</button>
-            </form>
-        </div>
+                <input type="submit" value="Reservar">
+        </form>
 
         <div id="bloqueSecundario">
-            <img
-                id="imagenSecundaria"
-                src="imagenes/imagen_secundaria.png"
-            >
+            <img id="imagenSecundaria" src="imagenes/imagen_secundaria.png">
+ 
 
             <div id="listaVentajas">
                 <h2>¿Por qué elegimos?</h2>
